@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendJokesV2", "SendJokesV2\SendJokesV2.csproj", "{484D0BAF-2067-4D1E-9D5B-2B1404824FF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{484D0BAF-2067-4D1E-9D5B-2B1404824FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484D0BAF-2067-4D1E-9D5B-2B1404824FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484D0BAF-2067-4D1E-9D5B-2B1404824FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484D0BAF-2067-4D1E-9D5B-2B1404824FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {231C5D94-B41F-4852-BAAA-61C89D8D7256}
+	EndGlobalSection
+EndGlobal
