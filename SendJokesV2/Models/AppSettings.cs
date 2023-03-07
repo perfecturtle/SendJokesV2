@@ -11,5 +11,7 @@ namespace SendJokesV2.Models
         public string BaseURLJokes { get; set; }
         public string BaseURLComics { get; set; }
         public string BaseURLRandomFacts { get; set; }
+        public string SendGridAPIKey { get; set; }
+        public string RandomFactsAPIKey { get; set; }
     }
 }

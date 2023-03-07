@@ -54,7 +54,7 @@ namespace SendJokesV2.Services
         {
             using (var client = _httpClientFactory.CreateClient("RandomFactsAPI"))
             {
-                client.DefaultRequestHeaders.Add("X-Api-Key", "VvaTgcE51/bBkBpmpCXyEw==Sish2NGLVuQIMI3y");
+                client.DefaultRequestHeaders.Add("X-Api-Key", _appSettings.Value.RandomFactsAPIKey);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 

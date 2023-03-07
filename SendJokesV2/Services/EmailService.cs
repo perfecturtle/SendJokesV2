@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.Extensions.Options;
 using SendGrid;
 using SendGrid.Helpers.Mail;
+using SendJokesV2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +18,15 @@ namespace SendJokesV2.Services
     }
     public class EmailService : IEmailService
     {
+        private readonly IOptions<AppSettings> _appSettings;
+
+        public EmailService(IOptions<AppSettings> appSettings)
+        {
+            _appSettings = appSettings;
+        }
         public async Task ExecuteEmail(string subject, string plainTextContent, string fact, Uri imageUrl)
         {
-            var client = new SendGridClient("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");
+            var client = new SendGridClient(_appSettings.Value.SendGridAPIKey);
             var from = new EmailAddress("perfecturtle@hotmail.com", "haystack");
 
             List<EmailAddress> recipients = new List<EmailAddress>{
